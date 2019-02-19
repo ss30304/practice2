@@ -1,0 +1,102 @@
+@import "basic.less";
+
+
+.service {
+	#header {
+		position: absolute;
+		width: 100%;
+	}
+
+	#content{
+		.header {
+			background-image: url(http://dummyimage.com/1920x1080/eee/ddd);
+			&.black {
+				.title, #breadcrumbs li {
+					color: black;
+				}
+			}
+		}
+		.special-services {
+			padding: 100px 0;
+			.title {
+				margin-bottom: 5px;
+				font-size: 16px;
+				color: @color_4;
+			}
+			.subtitle {
+				margin: 0;
+				font-size: 18px;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+			p {
+				margin-bottom: 30px;
+			}
+		}
+		.special-offer {
+			padding: 60px 0;
+			.title {
+				font-size: 18px;
+				margin-bottom: 10px;
+				letter-spacing: 1px;
+				em {
+					font-style: normal;
+					color: @color_4;
+				}
+			}
+			.desc {
+				color: @color_1;
+			}
+			
+			.promo-info  {
+				float: left;
+			}
+
+			.promo-button {
+				float: right;
+				margin: 0;
+			}
+			
+		}
+	}
+
+	.services, .feature, .pricing {
+		padding: 100px 0;
+	}
+
+	.services {
+		.row {
+			> div {
+				padding: 50px;
+				&:hover {
+					background: black;
+					color: white;
+					i {
+						color: @color_4;
+					}
+				}
+			}
+		}
+	}
+
+
+	
+	
+
+	.big-dot {
+		li {
+			float: left;
+			width: 50%;
+			margin-bottom: 10px;
+			line-height: 1.5;
+			&:before {
+				font-family: fontello;
+				content: '\f10c';
+				padding-right: 10px;
+				color: #757575;	
+			}
+		}
+		
+	}
+
+}
